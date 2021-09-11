@@ -23,4 +23,5 @@ int main()
     int x=(int)round(mc+y+z);
     printf("%d",x);
     return 0;
+    
 }

@@ -30,4 +30,5 @@ if((n%2)!=0){
     printf("Not Weird");
 }
  return 0;
+ 
 }

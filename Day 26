@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   /* int returned[3] = {0};
+    int expected[3] = {0};*/
+    int d1,d2,m1,m2,y1,y2;
+    
+    scanf("%d %d %d\n", &d1, &m1, &y1);
+    scanf("%d %d %d\n", &d2, &m2, &y2);
+    
+    if(y1>y2) {
+        printf("10000\n");
+    }else if(y1<y2){
+        printf("0\n");
+    } 
+    else if (m1>m2) {
+        int months_late = m1-m2;
+        printf("%d\n", months_late * 500);
+    } else if (d1>d2) {
+        int days_late = d1-d2;
+        printf("%d\n", days_late * 15);
+    }
+     else {
+        printf("0\n");
+    }
+    
+    return 0;
+}
